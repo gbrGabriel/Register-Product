@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Presentation</name>
+    </assembly>
+    <members>
+        <member name="M:Presentation.Controllers.EstoqueController.ObterTodos">
+            <summary>
+            Retorna uma coleção de todos estoques cadastrados no sistema. 
+            </summary>
+            <returns>Uma coleção de estoques cadastrado.</returns>
+            <response code="200">Uma coleção de estoques cadastrado.</response>
+        </member>
+        <member name="M:Presentation.Controllers.EstoqueController.ObterPorId(System.Guid)">
+            <summary>
+            Obtém um estoque cadastrado no sistema por id.
+            </summary>
+            <param name="id">Id do estoque cadastrado no sistema.</param>
+            <returns>Um estoque cadastrado.</returns>
+            <response code="200">Retorna o estoque encontrado.</response>
+        </member>
+        <member name="M:Presentation.Controllers.ProdutoController.ObterTodos">
+            <summary>
+            Obtém todos os produtos cadastrados no sistema.
+            </summary>
+            <returns>Uma coleção de produtos.</returns>
+            <response code="200">Retorna uma coleção de produtos</response>
+        </member>
+        <member name="M:Presentation.Controllers.ProdutoController.ObterPorId(System.Guid)">
+            <summary>
+            Obtém um produto cadastrado no sistema por id.
+            </summary>
+            <param name="id">Id do produto cadastrado no sistema.</param>
+            <returns>Um produto cadastrado.</returns>
+            <response code="200">Retorna o produto encontrado.</response>
+        </member>
+        <member name="M:Presentation.Controllers.ProdutoController.GravarProduto(Presentation.Models.ProdutoModel)">
+             <summary>
+             Grava um novo produto no sistema.
+             </summary>
+             <param name="model">Dados do produto a ser gravado.</param>
+             <returns>O novo produto cadastrado.</returns>
+             <remarks>
+             Exemplo de requisição:
+            
+                 POST /gravar-produto
+                 {
+                    "nome": "Água mineral",
+                    "descricao": "Água mineral da fonte de Palmeiras",
+                    "preco": 1.50,
+                    "unidade":"ML"
+                 }
+            
+             </remarks>
+             <response code="200">Retorna o novo produto cadastrado.</response>
+             <response code="400">Se o produto não pôde ser cadastrado, retorna uma mensagem de erro.</response>
+        </member>
+        <member name="M:Presentation.Controllers.ProdutoController.AtualizarDadosProduto(System.Guid,Presentation.Models.ProdutoModel)">
+             <summary>
+             Atualiza um produto existente no sistema.
+             </summary>
+             <param name="id">Identificador único do produto.</param>
+             <param name="model">Dados do produto a serem atualizados.</param>
+             <returns>O produto atualizado.</returns>
+             <remarks>
+             Exemplo de requisição:
+            
+                 PUT /atualizar-dados-produto/{id}
+                 {
+                    "nome": "Água mineral",
+                    "descricao": "Água mineral da fonte de Palmeiras",
+                    "preco": 1.50,
+                    "unidade":"ML"
+                 }
+             </remarks>
+             <response code="200">Retorna o produto atualizado.</response>
+             <response code="400">Se o produto não pôde ser atualizado, retorna uma mensagem de erro.</response>
+             <response code="404">Se o produto não existe no sistema, retorna uma mensagem de erro.</response>
+        </member>
+        <member name="M:Presentation.Controllers.ProdutoController.InativarProduto(System.Guid)">
+             <summary>
+             Inativa um produto cadastrado no sistema.
+             </summary>
+             <param name="id">Identificador único do produto.</param>
+             <returns>O produto atualizado.</returns>
+             <remarks>
+             Exemplo de requisição:
+            
+                 PUT /inativar-produto/{id}
+                 Identificador único do produto.
+                 
+             </remarks>
+             <response code="200">Retorna o produto atualizado.</response>
+             <response code="404">Se o produto não existe no sistema, retorna uma mensagem de erro.</response>
+        </member>
+        <member name="M:Presentation.Controllers.ProdutoController.DeletarProduto(System.Guid)">
+             <summary>
+             Deleta um produto existente no sistema.
+             </summary>
+             <param name="id">Identificador único do produto.</param>
+             <returns></returns>
+             <remarks>
+             Exemplo de requisição:
+            
+                 DELETE /atualizar-dados-produto/{id}
+                 Identificador único do produto.
+             </remarks>
+             <response code="204">Retorna apenas o StatusCodes de 204.</response>
+             <response code="404">Se o produto não existe no sistema, retorna uma mensagem de erro.</response>
+        </member>
+        <member name="T:Presentation.Models.EstoqueModel">
+            <summary>
+            Modelo de Estoque para entrada na requisição de gravação de produto.
+            </summary>
+        </member>
+        <member name="P:Presentation.Models.EstoqueModel.produtoId">
+            <summary>
+            Id do produto.
+            </summary>
+            <example>Id do produto</example>
+        </member>
+        <member name="P:Presentation.Models.EstoqueModel.quantidade">
+            <summary>
+            Quantidade do produto disponível.
+            </summary>
+            <example>Quantidade do produto</example>
+        </member>
+        <member name="T:Presentation.Models.ProdutoModel">
+            <summary>
+            Modelo de Produto para entrada na requisição de gravação de produto.
+            </summary>
+        </member>
+        <member name="P:Presentation.Models.ProdutoModel.nome">
+            <summary>
+            Nome do produto.
+            </summary>
+            <example>Produto Exemplo</example>
+        </member>
+        <member name="P:Presentation.Models.ProdutoModel.descricao">
+            <summary>
+            Descrição do produto.
+            </summary>
+            <example>Descrição do produto exemplo</example>
+        </member>
+        <member name="P:Presentation.Models.ProdutoModel.preco">
+            <summary>
+            Preço do produto.
+            </summary>
+            <example>15.99</example>
+        </member>
+        <member name="P:Presentation.Models.ProdutoModel.unidade">
+            <summary>
+            Unidade do produto.
+            </summary>
+            <example>UN</example>
+        </member>
+    </members>
+</doc>
