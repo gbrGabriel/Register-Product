@@ -25,9 +25,5 @@ public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbCont
         base.OnModelCreating(modelBuilder);
     }
 
-    public override void Dispose()
-    {
-        base.Dispose();
-        GC.SuppressFinalize(this);
-    }
+    public override void Dispose() => base.Dispose();
 }

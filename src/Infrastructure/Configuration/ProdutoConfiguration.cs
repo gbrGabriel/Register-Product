@@ -9,8 +9,6 @@ public class ProdutoConfiguration : IEntityTypeConfiguration<Produto>
     {
         builder.HasKey(e => e.Id);
 
-        builder.Property(e => e.Id).HasDefaultValueSql("newsequentialid()");
-
         builder.Property(e => e.Nome).HasMaxLength(255);
 
         builder.Property(e => e.Descricao).HasMaxLength(255);

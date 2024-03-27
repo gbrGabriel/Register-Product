@@ -3,13 +3,9 @@ using Infrastructure.Context;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repositories;
-public abstract class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where TEntity : class
+public abstract class RepositoryBase<TEntity>(DatabaseContext context) : IRepositoryBase<TEntity> where TEntity : class
 {
-    public readonly DatabaseContext _context;
-    protected RepositoryBase(DatabaseContext context)
-    {
-        _context = context;
-    }
+    public readonly DatabaseContext _context = context;
 
     public async Task<int> DeleteAsync(TEntity entity)
     {
@@ -77,9 +73,13 @@ public abstract class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where T
 
     public void Add(TEntity entity)
     {
-        if (_context.Entry(entity).State == EntityState.Detached)
+        try
         {
-            _context.Entry(entity).State = EntityState.Modified;
+            _context.Set<TEntity>().Add(entity);
+        }
+        catch (Exception)
+        {
+            throw;
         }
     }
 
@@ -105,8 +105,5 @@ public abstract class RepositoryBase<TEntity> : IRepositoryBase<TEntity> where T
     public virtual async Task<TEntity> GetByIdAsync(Guid id) =>
          await _context.Set<TEntity>().FindAsync(id);
 
-    public void Dispose()
-    {
-        _context.Dispose();
-    }
+    public void Dispose() => _context.Dispose();
 }

@@ -9,8 +9,6 @@ public class EstoqueConfiguration : IEntityTypeConfiguration<Estoque>
     {
         builder.HasKey(e => e.Id);
 
-        builder.Property(e => e.Id).HasDefaultValueSql("newsequentialid()");
-
         builder.Property(e => e.Quantidade).HasPrecision(18, 5);
     }
 }
