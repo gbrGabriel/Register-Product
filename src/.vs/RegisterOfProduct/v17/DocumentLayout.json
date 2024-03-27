@@ -3,40 +3,16 @@
   "WorkspaceRootPath": "D:\\Projetos\\RegisterOfProduct\\src\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AE842699-5CF9-4243-A35E-80FBFDA397D6}|Presentation\\Presentation.csproj|d:\\projetos\\registerofproduct\\src\\presentation\\controllers\\estoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE842699-5CF9-4243-A35E-80FBFDA397D6}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\estoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE842699-5CF9-4243-A35E-80FBFDA397D6}|Presentation\\Presentation.csproj|d:\\projetos\\registerofproduct\\src\\presentation\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE842699-5CF9-4243-A35E-80FBFDA397D6}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE842699-5CF9-4243-A35E-80FBFDA397D6}|Presentation\\Presentation.csproj|d:\\projetos\\registerofproduct\\src\\presentation\\models\\estoquemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE842699-5CF9-4243-A35E-80FBFDA397D6}|Presentation\\Presentation.csproj|solutionrelative:presentation\\models\\estoquemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AE842699-5CF9-4243-A35E-80FBFDA397D6}|Presentation\\Presentation.csproj|d:\\projetos\\registerofproduct\\src\\presentation\\models\\produtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AE842699-5CF9-4243-A35E-80FBFDA397D6}|Presentation\\Presentation.csproj|solutionrelative:presentation\\models\\produtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{353A1528-D5B2-40FE-99BC-7F7D64C3B2C0}|Domain\\Domain.csproj|d:\\projetos\\registerofproduct\\src\\domain\\entities\\estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{353A1528-D5B2-40FE-99BC-7F7D64C3B2C0}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\estoque.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A9AAFA90-ED8E-47AB-B753-7679BF004949}|Infrastructure\\Infrastructure.csproj|d:\\projetos\\registerofproduct\\src\\infrastructure\\configuration\\produtoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9AAFA90-ED8E-47AB-B753-7679BF004949}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\configuration\\produtoconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{353A1528-D5B2-40FE-99BC-7F7D64C3B2C0}|Domain\\Domain.csproj|d:\\projetos\\registerofproduct\\src\\domain\\entities\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{353A1528-D5B2-40FE-99BC-7F7D64C3B2C0}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9AAFA90-ED8E-47AB-B753-7679BF004949}|Infrastructure\\Infrastructure.csproj|d:\\projetos\\registerofproduct\\src\\infrastructure\\context\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9AAFA90-ED8E-47AB-B753-7679BF004949}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\context\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AE842699-5CF9-4243-A35E-80FBFDA397D6}|Presentation\\Presentation.csproj|d:\\projetos\\registerofproduct\\src\\presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AE842699-5CF9-4243-A35E-80FBFDA397D6}|Presentation\\Presentation.csproj|solutionrelative:presentation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{353A1528-D5B2-40FE-99BC-7F7D64C3B2C0}|Domain\\Domain.csproj|d:\\projetos\\registerofproduct\\src\\domain\\entities\\entitybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{353A1528-D5B2-40FE-99BC-7F7D64C3B2C0}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\entitybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A9AAFA90-ED8E-47AB-B753-7679BF004949}|Infrastructure\\Infrastructure.csproj|d:\\projetos\\registerofproduct\\src\\infrastructure\\configuration\\estoqueconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9AAFA90-ED8E-47AB-B753-7679BF004949}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\configuration\\estoqueconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,119 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EstoqueModel.cs",
-              "DocumentMoniker": "D:\\Projetos\\RegisterOfProduct\\src\\Presentation\\Models\\EstoqueModel.cs",
-              "RelativeDocumentMoniker": "Presentation\\Models\\EstoqueModel.cs",
-              "ToolTip": "D:\\Projetos\\RegisterOfProduct\\src\\Presentation\\Models\\EstoqueModel.cs",
-              "RelativeToolTip": "Presentation\\Models\\EstoqueModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAARAAAA",
+              "DocumentIndex": 1,
+              "Title": "ProdutoConfiguration.cs",
+              "DocumentMoniker": "D:\\Projetos\\RegisterOfProduct\\src\\Infrastructure\\Configuration\\ProdutoConfiguration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Configuration\\ProdutoConfiguration.cs",
+              "ToolTip": "D:\\Projetos\\RegisterOfProduct\\src\\Infrastructure\\Configuration\\ProdutoConfiguration.cs",
+              "RelativeToolTip": "Infrastructure\\Configuration\\ProdutoConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-17T02:28:24.273Z",
+              "WhenOpened": "2024-03-27T21:20:54.512Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EstoqueConfiguration.cs",
+              "DocumentMoniker": "D:\\Projetos\\RegisterOfProduct\\src\\Infrastructure\\Configuration\\EstoqueConfiguration.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Configuration\\EstoqueConfiguration.cs",
+              "ToolTip": "D:\\Projetos\\RegisterOfProduct\\src\\Infrastructure\\Configuration\\EstoqueConfiguration.cs",
+              "RelativeToolTip": "Infrastructure\\Configuration\\EstoqueConfiguration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T21:20:44.141Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "EstoqueController.cs",
-              "DocumentMoniker": "D:\\Projetos\\RegisterOfProduct\\src\\Presentation\\Controllers\\EstoqueController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Controllers\\EstoqueController.cs",
-              "ToolTip": "D:\\Projetos\\RegisterOfProduct\\src\\Presentation\\Controllers\\EstoqueController.cs",
-              "RelativeToolTip": "Presentation\\Controllers\\EstoqueController.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-17T02:17:01.294Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "D:\\Projetos\\RegisterOfProduct\\src\\Domain\\Entities\\Produto.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Produto.cs",
-              "ToolTip": "D:\\Projetos\\RegisterOfProduct\\src\\Domain\\Entities\\Produto.cs",
-              "RelativeToolTip": "Domain\\Entities\\Produto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-17T02:14:58.442Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projetos\\RegisterOfProduct\\src\\Presentation\\Program.cs",
-              "RelativeDocumentMoniker": "Presentation\\Program.cs",
-              "ToolTip": "D:\\Projetos\\RegisterOfProduct\\src\\Presentation\\Program.cs",
-              "RelativeToolTip": "Presentation\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAAAHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T18:40:33.743Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProdutoController.cs",
-              "DocumentMoniker": "D:\\Projetos\\RegisterOfProduct\\src\\Presentation\\Controllers\\ProdutoController.cs",
-              "RelativeDocumentMoniker": "Presentation\\Controllers\\ProdutoController.cs",
-              "ToolTip": "D:\\Projetos\\RegisterOfProduct\\src\\Presentation\\Controllers\\ProdutoController.cs",
-              "RelativeToolTip": "Presentation\\Controllers\\ProdutoController.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAQwBIAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T18:05:39.585Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "ProdutoModel.cs",
               "DocumentMoniker": "D:\\Projetos\\RegisterOfProduct\\src\\Presentation\\Models\\ProdutoModel.cs",
               "RelativeDocumentMoniker": "Presentation\\Models\\ProdutoModel.cs",
               "ToolTip": "D:\\Projetos\\RegisterOfProduct\\src\\Presentation\\Models\\ProdutoModel.cs",
               "RelativeToolTip": "Presentation\\Models\\ProdutoModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAqAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T18:04:06.836Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "EntityBase.cs",
-              "DocumentMoniker": "D:\\Projetos\\RegisterOfProduct\\src\\Domain\\Entities\\EntityBase.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\EntityBase.cs",
-              "ToolTip": "D:\\Projetos\\RegisterOfProduct\\src\\Domain\\Entities\\EntityBase.cs",
-              "RelativeToolTip": "Domain\\Entities\\EntityBase.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T17:27:31.352Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DatabaseContext.cs",
-              "DocumentMoniker": "D:\\Projetos\\RegisterOfProduct\\src\\Infrastructure\\Context\\DatabaseContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Context\\DatabaseContext.cs",
-              "ToolTip": "D:\\Projetos\\RegisterOfProduct\\src\\Infrastructure\\Context\\DatabaseContext.cs",
-              "RelativeToolTip": "Infrastructure\\Context\\DatabaseContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T17:10:55.624Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Estoque.cs",
-              "DocumentMoniker": "D:\\Projetos\\RegisterOfProduct\\src\\Domain\\Entities\\Estoque.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Estoque.cs",
-              "ToolTip": "D:\\Projetos\\RegisterOfProduct\\src\\Domain\\Entities\\Estoque.cs",
-              "RelativeToolTip": "Domain\\Entities\\Estoque.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-16T17:26:40.685Z",
+              "WhenOpened": "2024-03-27T21:16:08.783Z",
               "EditorCaption": ""
             }
           ]
