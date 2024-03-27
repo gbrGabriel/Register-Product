@@ -42,7 +42,8 @@ namespace Presentation.Controllers
         ///        "nome": "Água mineral",
         ///        "descricao": "Água mineral da fonte de Palmeiras",
         ///        "preco": 1.50,
-        ///        "unidade":"ML"
+        ///        "unidade":"ML",
+        ///        "sku":"WEG123"
         ///     }
         ///
         /// </remarks>
@@ -67,6 +68,9 @@ namespace Presentation.Controllers
                 if (string.IsNullOrWhiteSpace(model.descricao))
                     return BadRequest("Não é possível gravar um produto sem uma descrição.");
 
+                if (string.IsNullOrWhiteSpace(model.sku))
+                    return BadRequest("Não é possível gravar um produto sem um SKU.");
+
                 if (model.preco <= 0)
                     return BadRequest("Não é possível gravar um produto com preço menor ou igual a zero.");
 
@@ -76,6 +80,7 @@ namespace Presentation.Controllers
                     Descricao = model.descricao,
                     Preco = model.preco,
                     Unidade = model.unidade,
+                    SKU = model.sku,
                     Inativo = false
                 };
 
@@ -104,7 +109,8 @@ namespace Presentation.Controllers
         ///        "nome": "Água mineral",
         ///        "descricao": "Água mineral da fonte de Palmeiras",
         ///        "preco": 1.50,
-        ///        "unidade":"ML"
+        ///        "unidade":"ML",
+        ///        "sku":"WEG123"
         ///     }
         /// </remarks>
         /// <response code="200">Retorna o produto atualizado.</response>
@@ -122,6 +128,14 @@ namespace Presentation.Controllers
 
                 if (produto == null)
                     return NotFound("Não foi possível encontrar um produto com o ID fornecido.");
+
+                produto.SKU = model.sku;
+                produto.Unidade = model.unidade;
+                produto.Preco = model.preco;
+                produto.Nome = model.nome;
+                produto.Descricao = model.descricao;
+
+                await _repositoryProduto.UpdateAsync(produto);
 
                 return Ok(produto);
             }
@@ -145,7 +159,7 @@ namespace Presentation.Controllers
         /// </remarks>
         /// <response code="200">Retorna o produto atualizado.</response>
         /// <response code="404">Se o produto não existe no sistema, retorna uma mensagem de erro.</response>
-        [ProducesResponseType(typeof(Produto), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
         [ProducesResponseType(typeof(string), StatusCodes.Status404NotFound)]
         [HttpPut("inativar-produto/{id:guid}")]
         public async Task<IActionResult> InativarProduto(Guid id)
@@ -164,7 +178,7 @@ namespace Presentation.Controllers
 
                 await _repositoryProduto.UpdateAsync(produto);
 
-                return Ok(produto);
+                return NoContent();
             }
             catch (Exception)
             {
@@ -180,7 +194,7 @@ namespace Presentation.Controllers
         /// <remarks>
         /// Exemplo de requisição:
         ///
-        ///     DELETE /atualizar-dados-produto/{id}
+        ///     DELETE /deletar-produto/{id}
         ///     Identificador único do produto.
         /// </remarks>
         /// <response code="204">Retorna apenas o StatusCodes de 204.</response>

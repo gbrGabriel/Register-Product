@@ -28,5 +28,12 @@ public class ProdutoModel
     /// </summary>
     /// <example>UN</example>
     public string unidade { get; set; } = null!;
+
+    /// <summary>
+    /// SKU do produto.
+    /// </summary>
+    /// <example>3453EEE</example>
+    public string sku { get; set; } = null!;
+
 }
 
